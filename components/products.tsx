@@ -13,6 +13,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { cn } from "@/lib/utils"
+import { buildWhatsAppUrl, getBrandWhatsAppMessage } from "@/lib/whatsapp"
 
 interface BrandProduct {
   name: string
@@ -104,7 +105,7 @@ const brands: Brand[] = [
     summary: "Rótulo leve e contemporâneo para um público ativo.",
     description:
       "Amstel Ultra traz uma proposta moderna e leve, reforçando conveniência, refrescância e posicionamento premium dentro da categoria low carb.",
-    logo: "/brands/amstel-ultra.png",
+    logo: "/brands/amstel-ultra-uploaded-v2.png",
     logoClassName: "h-28 max-w-[120px]",
     modalLogoClassName: "h-24 max-w-[130px]",
     products: [
@@ -261,9 +262,9 @@ const brands: Brand[] = [
   },
   {
     name: "Skinka",
-    summary: "Refrigerante popular com apelo direto e comercial.",
+    summary: "Linha de sucos com apelo direto e comercial.",
     description:
-      "Skinka mantém uma proposta prática, acessível e conhecida do público, contribuindo para variedade e amplitude no portfólio.",
+      "Skinka mantém uma linha de sucos prática, acessível e conhecida do público, contribuindo para variedade e amplitude no portfólio.",
     logo: "/brands/skinka.png",
     products: [
       product("Skinka Frutas Cítricas 450ml", "Suco", "/produtos/skinka/suco-skinka-frutas-citricas-gfa-450ml.png"),
@@ -318,9 +319,7 @@ const brands: Brand[] = [
 function BrandCard({ brand, index }: { brand: Brand; index: number }) {
   const [isVisible, setIsVisible] = useState(false)
   const cardRef = useRef<HTMLDivElement>(null)
-  const whatsappMessage = encodeURIComponent(
-    `Olá, vim pelo site da São Rafael e gostaria de consultar os produtos da marca ${brand.name}.`
-  )
+  const whatsappUrl = buildWhatsAppUrl(getBrandWhatsAppMessage(brand.name))
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -480,7 +479,7 @@ function BrandCard({ brand, index }: { brand: Brand; index: number }) {
                 className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-xl px-6 py-6 font-semibold shadow-lg shadow-accent/20"
               >
                 <a
-                  href={`https://wa.me/5554999999999?text=${whatsappMessage}`}
+                  href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

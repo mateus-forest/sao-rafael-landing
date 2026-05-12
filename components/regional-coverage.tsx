@@ -79,65 +79,81 @@ const serviceCities = [
 ]
 
 const regionalPoints = [
-  { city: "Pontão", x: 102, y: 168 },
-  { city: "Passo Fundo", x: 142, y: 240, primary: true, labelDx: -8, labelDy: -26 },
-  { city: "Coxilha", x: 182, y: 205 },
-  { city: "Vila Langaro", x: 212, y: 208 },
-  { city: "Santa Cecília do Sul", x: 232, y: 224 },
-  { city: "Água Santa", x: 220, y: 246 },
-  { city: "Mato Castelhano", x: 176, y: 258 },
-  { city: "Caseiros", x: 278, y: 252 },
-  { city: "Capão Bonito do Sul", x: 356, y: 214 },
-  { city: "Lagoa Vermelha", x: 330, y: 246, primary: true, labelDx: -18, labelDy: -28 },
-  { city: "Pinhal da Serra", x: 390, y: 132 },
-  { city: "Esmeralda", x: 395, y: 168 },
-  { city: "Vacaria", x: 498, y: 246, primary: true, labelDx: 18, labelDy: -10 },
-  { city: "Muitos Capões", x: 398, y: 302 },
-  { city: "Bom Jesus", x: 606, y: 322, primary: true, labelDx: 18, labelDy: -10 },
-  { city: "São José dos Ausentes", x: 682, y: 350 },
-  { city: "Monte Alegre dos Campos", x: 474, y: 358 },
-  { city: "Campestre da Serra", x: 422, y: 378 },
-  { city: "Jaquirana", x: 590, y: 470 },
-  { city: "São Marcos", x: 394, y: 500, primary: true, labelDx: 14, labelDy: -8 },
-  { city: "Flores da Cunha", x: 342, y: 528, primary: true, labelDx: -16, labelDy: 18 },
-  { city: "Nova Roma do Sul", x: 380, y: 520 },
-  { city: "Veranópolis", x: 300, y: 498, primary: true, labelDx: -10, labelDy: 22 },
-  { city: "Cotiporã", x: 260, y: 520 },
-  { city: "Vila Flores", x: 286, y: 474 },
-  { city: "Protásio Alves", x: 345, y: 468 },
-  { city: "Antônio Prado", x: 344, y: 486 },
-  { city: "Fagundes Varela", x: 272, y: 470 },
-  { city: "Guaporé", x: 222, y: 478 },
-  { city: "Vista Alegre do Prata", x: 246, y: 462 },
-  { city: "Nova Prata", x: 252, y: 430, primary: true, labelDx: -10, labelDy: -26 },
-  { city: "Nova Araçá", x: 312, y: 422 },
-  { city: "Nova Bassano", x: 292, y: 448 },
-  { city: "Nova Pádua", x: 360, y: 544 },
-  { city: "Paraí", x: 278, y: 392 },
-  { city: "Guabiju", x: 314, y: 372 },
-  { city: "São Jorge", x: 292, y: 366 },
-  { city: "Ibiraiaras", x: 332, y: 324 },
-  { city: "David Canabarro", x: 246, y: 334 },
-  { city: "Vanini", x: 232, y: 368 },
-  { city: "Ciríaco", x: 214, y: 308 },
-  { city: "Gentil", x: 192, y: 324 },
-  { city: "Santo Antônio do Palma", x: 124, y: 336 },
-  { city: "Ernestina", x: 100, y: 316 },
-  { city: "Santo Antônio do Planalto", x: 84, y: 298 },
-  { city: "Nicolau Vergueiro", x: 134, y: 364 },
-  { city: "Marau", x: 154, y: 362 },
-  { city: "Ibirapuitã", x: 92, y: 414 },
-  { city: "Camargo", x: 164, y: 430 },
-  { city: "Vila Maria", x: 202, y: 420 },
-  { city: "Casca", x: 234, y: 398 },
-  { city: "Montauri", x: 212, y: 444 },
-  { city: "Nova Alvorada", x: 164, y: 456 },
-  { city: "União da Serra", x: 196, y: 484 },
-  { city: "André da Rocha", x: 218, y: 454 },
-  { city: "Serafina Corrêa", x: 238, y: 446 },
-  { city: "Muliterno", x: 258, y: 286 },
-  { city: "São Domingos do Sul", x: 262, y: 380 },
-  { city: "Ipê", x: 412, y: 442 },
+  { city: "Pontão", x: 94, y: 160 },
+  { city: "Passo Fundo", x: 146, y: 238, primary: true, labelDx: -8, labelDy: -26 },
+  { city: "Coxilha", x: 194, y: 196 },
+  { city: "Vila Langaro", x: 228, y: 202 },
+  { city: "Santa Cecília do Sul", x: 262, y: 220 },
+  { city: "Água Santa", x: 248, y: 244 },
+  { city: "Mato Castelhano", x: 184, y: 256 },
+  { city: "Caseiros", x: 320, y: 248 },
+  { city: "Capão Bonito do Sul", x: 382, y: 206 },
+  { city: "Lagoa Vermelha", x: 356, y: 242, primary: true, labelDx: -18, labelDy: -28 },
+  { city: "Pinhal da Serra", x: 446, y: 130 },
+  { city: "Esmeralda", x: 454, y: 170 },
+  { city: "Vacaria", x: 518, y: 266, primary: true, labelDx: 18, labelDy: -10 },
+  { city: "Muitos Capões", x: 438, y: 302 },
+  { city: "Bom Jesus", x: 624, y: 342, primary: true, labelDx: 18, labelDy: -10 },
+  { city: "São José dos Ausentes", x: 724, y: 360 },
+  { city: "Monte Alegre dos Campos", x: 502, y: 360 },
+  { city: "Campestre da Serra", x: 454, y: 388 },
+  { city: "Jaquirana", x: 614, y: 488 },
+  { city: "São Marcos", x: 454, y: 506, primary: true, labelDx: 14, labelDy: -8 },
+  { city: "Flores da Cunha", x: 390, y: 536, primary: true, labelDx: -16, labelDy: 18 },
+  { city: "Nova Roma do Sul", x: 430, y: 526 },
+  { city: "Veranópolis", x: 324, y: 504, primary: true, labelDx: -10, labelDy: 22 },
+  { city: "Cotiporã", x: 282, y: 530 },
+  { city: "Vila Flores", x: 312, y: 482 },
+  { city: "Protásio Alves", x: 392, y: 474 },
+  { city: "Antônio Prado", x: 424, y: 492 },
+  { city: "Fagundes Varela", x: 292, y: 474 },
+  { city: "Guaporé", x: 236, y: 482 },
+  { city: "Vista Alegre do Prata", x: 262, y: 462 },
+  { city: "Nova Prata", x: 292, y: 434, primary: true, labelDx: -10, labelDy: -26 },
+  { city: "Nova Araçá", x: 346, y: 424 },
+  { city: "Nova Bassano", x: 324, y: 452 },
+  { city: "Nova Pádua", x: 414, y: 550 },
+  { city: "Paraí", x: 316, y: 396 },
+  { city: "Guabiju", x: 350, y: 376 },
+  { city: "São Jorge", x: 324, y: 364 },
+  { city: "Ibiraiaras", x: 376, y: 322 },
+  { city: "David Canabarro", x: 268, y: 332 },
+  { city: "Vanini", x: 252, y: 364 },
+  { city: "Ciríaco", x: 232, y: 304 },
+  { city: "Gentil", x: 204, y: 322 },
+  { city: "Santo Antônio do Palma", x: 150, y: 334 },
+  { city: "Ernestina", x: 118, y: 314 },
+  { city: "Santo Antônio do Planalto", x: 98, y: 292 },
+  { city: "Nicolau Vergueiro", x: 144, y: 362 },
+  { city: "Marau", x: 176, y: 360 },
+  { city: "Ibirapuitã", x: 106, y: 410 },
+  { city: "Camargo", x: 186, y: 430 },
+  { city: "Vila Maria", x: 222, y: 416 },
+  { city: "Casca", x: 258, y: 396 },
+  { city: "Montauri", x: 236, y: 446 },
+  { city: "Nova Alvorada", x: 180, y: 460 },
+  { city: "União da Serra", x: 214, y: 486 },
+  { city: "André da Rocha", x: 242, y: 456 },
+  { city: "Serafina Corrêa", x: 266, y: 448 },
+  { city: "Muliterno", x: 294, y: 284 },
+  { city: "São Domingos do Sul", x: 292, y: 380 },
+  { city: "Ipê", x: 470, y: 446 },
+]
+
+const neighboringContours = [
+  "M104 94 164 76 220 82 240 112 234 142 200 166 148 162 104 138 88 116Z",
+  "M546 76 612 66 678 88 720 132 734 188 714 238 674 250 646 220 626 170 582 138 542 120Z",
+  "M650 246 720 256 754 292 752 356 714 390 656 382 628 340 628 286Z",
+  "M184 500 248 474 330 494 384 542 354 586 262 590 188 560 162 524Z",
+]
+
+const neighboringLabels = [
+  { label: "Erechim", x: 192, y: 48 },
+  { label: "Lages", x: 642, y: 54 },
+  { label: "Criciúma", x: 694, y: 306 },
+  { label: "Tubarão", x: 728, y: 226 },
+  { label: "Bento Gonçalves", x: 220, y: 580 },
+  { label: "Caxias do Sul", x: 402, y: 578 },
 ]
 
 function normalizeCityName(value: string) {
@@ -178,43 +194,86 @@ function RegionalMap() {
               <stop offset="0%" stopColor="rgba(76, 214, 109, 0.55)" />
               <stop offset="100%" stopColor="rgba(76, 214, 109, 0)" />
             </radialGradient>
+            <linearGradient id="neighbor-stroke" x1="0%" x2="100%" y1="0%" y2="100%">
+              <stop offset="0%" stopColor="rgba(173, 187, 179, 0.24)" />
+              <stop offset="100%" stopColor="rgba(173, 187, 179, 0.08)" />
+            </linearGradient>
           </defs>
 
-          <g opacity="0.35">
-            <path
-              d="M134 202 184 158 255 138 322 88 390 62 430 82 474 70 522 84 578 118 640 142 672 184 694 248 684 320 708 378 676 440 618 472 586 530 502 512 468 552 404 540 358 574 284 560 244 514 180 498 132 452 82 416 64 350 80 282 116 254Z"
-              fill="rgba(255,255,255,0.04)"
-            />
+          <g opacity="0.55">
+            {neighboringContours.map((path, index) => (
+              <path
+                key={`neighbor-${index}`}
+                d={path}
+                fill="rgba(197, 210, 202, 0.035)"
+                stroke="url(#neighbor-stroke)"
+                strokeWidth="1.5"
+                strokeLinejoin="round"
+              />
+            ))}
           </g>
 
           <path
-            d="M122 208 178 162 252 144 314 92 386 62 434 82 482 74 530 92 584 126 640 148 674 188 694 246 688 304 712 358 688 422 630 460 586 520 510 506 462 548 390 536 346 568 280 552 238 506 176 486 126 444 94 390 76 336 88 280 116 246Z"
+            d="M96 160 126 134 172 128 198 110 244 118 262 166 316 178 366 148 410 122 444 132 458 98 496 112 522 152 578 184 666 190 706 222 728 288 714 332 742 356 736 390 694 398 690 424 656 430 642 506 616 520 602 502 520 504 498 470 456 468 444 520 382 544 324 522 292 486 236 478 202 440 130 420 110 376 88 358 82 306 100 266 86 234 108 202Z"
             fill="url(#coverage-base)"
             stroke="url(#coverage-stroke)"
             strokeWidth="3"
+            strokeLinejoin="round"
           />
 
           <path
-            d="M248 178 308 152 362 170 410 150 470 176 482 232 454 270 380 292 320 276 268 244Z"
-            fill="rgba(245, 198, 54, 0.18)"
-            stroke="rgba(245, 198, 54, 0.32)"
+            d="M302 194 354 188 398 208 432 184 478 196 474 242 446 286 398 308 348 300 316 270 294 228Z"
+            fill="rgba(245, 198, 54, 0.16)"
+            stroke="rgba(245, 198, 54, 0.3)"
             strokeWidth="2"
+            strokeLinejoin="round"
           />
           <path
-            d="M154 210 222 188 278 212 292 266 254 314 184 324 128 292 120 240Z"
-            fill="rgba(238, 81, 62, 0.15)"
-            stroke="rgba(238, 81, 62, 0.26)"
+            d="M118 198 188 178 254 188 306 214 302 268 278 326 220 340 148 330 104 292 102 232Z"
+            fill="rgba(238, 81, 62, 0.14)"
+            stroke="rgba(238, 81, 62, 0.24)"
             strokeWidth="2"
+            strokeLinejoin="round"
           />
           <path
-            d="M328 332 396 314 454 336 434 394 378 426 320 394Z"
-            fill="rgba(113, 228, 138, 0.12)"
-            stroke="rgba(113, 228, 138, 0.2)"
+            d="M432 164 512 160 566 188 642 208 694 248 704 322 688 382 638 404 594 400 548 382 514 356 482 366 432 350 408 300 402 240Z"
+            fill="rgba(72, 195, 101, 0.12)"
+            stroke="rgba(103, 228, 133, 0.22)"
             strokeWidth="2"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M196 380 266 372 330 386 384 418 410 468 380 532 312 526 250 490 208 440Z"
+            fill="rgba(238, 81, 62, 0.12)"
+            stroke="rgba(238, 81, 62, 0.22)"
+            strokeWidth="2"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M410 430 468 412 520 430 540 478 512 510 454 512 420 482Z"
+            fill="rgba(245, 198, 54, 0.11)"
+            stroke="rgba(245, 198, 54, 0.2)"
+            strokeWidth="2"
+            strokeLinejoin="round"
           />
 
-          <ellipse cx="508" cy="238" rx="150" ry="120" fill="url(#coverage-glow)" opacity="0.28" />
-          <ellipse cx="240" cy="322" rx="170" ry="130" fill="url(#coverage-glow)" opacity="0.14" />
+          <ellipse cx="548" cy="280" rx="172" ry="132" fill="url(#coverage-glow)" opacity="0.28" />
+          <ellipse cx="250" cy="304" rx="188" ry="140" fill="url(#coverage-glow)" opacity="0.14" />
+          <ellipse cx="350" cy="486" rx="126" ry="94" fill="url(#coverage-glow)" opacity="0.12" />
+
+          {neighboringLabels.map((item) => (
+            <text
+              key={item.label}
+              x={item.x}
+              y={item.y}
+              fill="rgba(225, 232, 227, 0.3)"
+              fontSize="12"
+              fontWeight="500"
+              letterSpacing="0.02em"
+            >
+              {item.label}
+            </text>
+          ))}
 
           {secondaryPoints.map((item) => (
             <g key={item.city}>

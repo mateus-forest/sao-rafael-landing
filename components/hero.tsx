@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { ArrowRight, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { whatsappLinks } from "@/lib/whatsapp"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -124,7 +125,7 @@ export function Hero() {
               className="border-border hover:border-accent/50 hover:bg-accent/10 text-foreground font-semibold px-8 py-6 text-lg rounded-full transition-all duration-300 hover:scale-105"
             >
               <a
-                href="https://wa.me/5554999999999"
+                href={whatsappLinks.hero}
                 target="_blank"
                 rel="noopener noreferrer"
               >

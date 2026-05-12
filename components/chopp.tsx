@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { whatsappLinks } from "@/lib/whatsapp"
 
 interface ChoppBrand {
   name: string
@@ -111,7 +112,7 @@ function ChoppCard({ brand, index }: { brand: ChoppBrand; index: number }) {
           className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-accent/25"
         >
           <a
-            href="https://wa.me/5554999999999"
+            href={whatsappLinks.chopp}
             target="_blank"
             rel="noopener noreferrer"
           >

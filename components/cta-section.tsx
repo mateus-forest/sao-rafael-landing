@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { MessageCircle, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { whatsappLinks } from "@/lib/whatsapp"
 
 export function CTASection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -70,7 +71,7 @@ export function CTASection() {
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-10 py-6 text-lg rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-accent/25 hover:scale-105 group"
             >
               <a
-                href="https://wa.me/5554999999999"
+                href={whatsappLinks.footer}
                 target="_blank"
                 rel="noopener noreferrer"
               >

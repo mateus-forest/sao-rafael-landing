@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Menu, X, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { whatsappLinks } from "@/lib/whatsapp"
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -66,7 +67,7 @@ export function Header() {
               className="hidden sm:flex bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-6 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-accent/25 hover:scale-105"
             >
               <a
-                href="https://wa.me/5554999999999"
+                href={whatsappLinks.hero}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -108,7 +109,7 @@ export function Header() {
               className="w-full mt-4 bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-full"
             >
               <a
-                href="https://wa.me/5554999999999"
+                href={whatsappLinks.hero}
                 target="_blank"
                 rel="noopener noreferrer"
               >
