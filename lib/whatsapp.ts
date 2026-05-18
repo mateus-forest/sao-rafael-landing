@@ -1,6 +1,6 @@
 "use client"
 
-const WHATSAPP_NUMBER = "54999902688"
+const WHATSAPP_NUMBER = "5554994588022"
 const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`
 
 export function buildWhatsAppUrl(message: string) {

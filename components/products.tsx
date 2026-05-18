@@ -83,7 +83,7 @@ const brands: Brand[] = [
   },
   {
     name: "Amstel",
-    summary: "Pure malt equilibrada, com grande apelo comercial.",
+    summary: "Puro malte equilibrada, com grande apelo comercial.",
     description:
       "Amstel combina tradição europeia, sabor equilibrado e forte reconhecimento de marca, sendo uma opção versátil para diferentes perfis de consumo.",
     logo: "/brands/amstel.png",
@@ -104,13 +104,13 @@ const brands: Brand[] = [
     name: "Amstel Ultra",
     summary: "Rótulo leve e contemporâneo para um público ativo.",
     description:
-      "Amstel Ultra traz uma proposta moderna e leve, reforçando conveniência, refrescância e posicionamento premium dentro da categoria low carb.",
+      "Amstel Ultra traz uma proposta moderna e leve, reforçando conveniência, refrescância, perfil sem glúten e posicionamento premium.",
     logo: "/brands/amstel-ultra-uploaded-v2.png",
     logoClassName: "h-28 max-w-[120px]",
     modalLogoClassName: "h-24 max-w-[130px]",
     products: [
-      product("Amstel Ultra Long Neck 275ml", "Low Carb", "/produtos/amstel-ultra/cerveja-amstel-ultra-ln-275ml.png"),
-      product("Amstel Ultra Lata 269ml", "Low Carb", "/produtos/amstel-ultra/cerveja-amstel-ultra-lt-269ml.png"),
+      product("Amstel Ultra Long Neck 275ml", "Sem glúten", "/produtos/amstel-ultra/cerveja-amstel-ultra-ln-275ml.png"),
+      product("Amstel Ultra Lata 269ml", "Sem glúten", "/produtos/amstel-ultra/cerveja-amstel-ultra-lt-269ml.png"),
     ],
   },
   {
@@ -153,7 +153,7 @@ const brands: Brand[] = [
     logoClassName: "h-28 max-w-[136px]",
     modalLogoClassName: "h-24 max-w-[138px]",
     products: [
-      product("Praya Lager Premium Long Neck 330ml", "Lager Premium", "/produtos/praya/cerveja-praya-lager-premium-ln-330ml.png"),
+      product("Praya Lager Premium Long Neck 330ml", "Lager Premium • Sem glúten", "/produtos/praya/cerveja-praya-lager-premium-ln-330ml.png"),
       product("Praya Receita Clássica Garrafa 600ml", "Receita Clássica", "/produtos/praya/cerveja-praya-receita-classica-gfa-600ml.png"),
       product("Praya Receita Clássica Long Neck 355ml", "Receita Clássica", "/produtos/praya/cerveja-praya-receita-classica-ln-355ml.png"),
       product("Praya Receita Clássica Lata 269ml", "Receita Clássica", "/produtos/praya/cerveja-praya-receita-classica-lt-269ml.png"),
